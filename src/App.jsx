@@ -53,7 +53,7 @@ function App() {
             name="length"
             id="length"
           />
-          <label for="length">Length({length})</label>
+          <label htmlFor="length">Length({length})</label>
 
           <input
             type="checkbox"
@@ -62,7 +62,7 @@ function App() {
             defaultChecked={isnum}
             onChange={() => setisnum((prev) => !prev)}
           />
-          <label for="num">Numbers</label>
+          <label htmlFor="num">Numbers</label>
 
           <input
             type="checkbox"
@@ -71,7 +71,7 @@ function App() {
             defaultChecked={splchar}
             onChange={() => setsplchar((prev) => !prev)}
           />
-          <label for="splchar">Symbol</label>
+          <label htmlFor="splchar">Symbol</label>
         </div>
       </div>
     </>
