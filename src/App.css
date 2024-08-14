@@ -1,0 +1,89 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 90%;
+  max-width: 600px;
+  border: 3px solid red;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(61, 61, 61);
+}
+.container h1{
+  margin: 3px;
+  font-weight: 700;
+  color: white;
+  font-size: 24px;
+}
+#length{
+  width: 65px;
+}
+#passfield{
+ color: rgb(255, 0, 0);
+ font-weight: 700;
+ font-size: 22px;
+}
+.container input{
+  color: white;
+  height: 25px;
+  width: 55%;  
+  max-width: 300px;
+  margin: auto;
+}
+
+.container button{
+  height: 33px;
+  width: 100px;
+  margin: 3px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #f8b5b5;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-items: flex-start;
+  align-items: center;
+}
+.options input{
+  width: 30px;
+  margin: 5px;
+  vertical-align: middle;
+}
+.options label{
+  color: white;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 60%; /* Wider container for tablets and small desktops */
+  }
+  .container h1 {
+    font-size: 28px; 
+  }
+  .container input {
+    width: 50%;
+  }
+  #passfield{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%; /* Wider container for larger desktops */
+  }
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .container input {
+    width: 50%;
+  }
+}
